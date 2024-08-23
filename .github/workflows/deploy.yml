@@ -22,4 +22,5 @@ jobs:
 
       - name: Sync S3 bucket
         run: |
-          aws s3 sync . s3://bucket-epamcampus --exclude ".git/*" --delete
+          aws s3 sync . s3://bucket-epamcampus --exclude ".git/*" --delete --exact-timestamps
+
